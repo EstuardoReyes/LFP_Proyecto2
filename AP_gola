@@ -1,0 +1,13 @@
+digraph unix {
+	{
+		"A \n perro que ladra \n no muerde"
+		X
+		rankdir=RL
+		A -> X
+	}
+	{
+		hola [fontsize=50.0 shape=plaintext]
+		intentaod
+		holis [color=red shape=star]
+	}
+}
