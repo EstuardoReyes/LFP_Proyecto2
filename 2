@@ -1,14 +1,15 @@
 digraph unix {
 	rankdir=LR size="8,5"
+	"Pila: #\nEntrada: " [shape=box]
 	"" [height=0.0001 shape=plaintext witdh=0.0001]
 	i [shape=circle]
-	p [shape=circle]
+	p [color=yellow shape=circle style=filled]
 	q [height=1 shape=circle witdh=1]
 	f [shape=doublecircle]
 	"" -> i
 	i -> p [label="λ,λ;#"]
-	p -> q [label="λ,λ;S"]
-	q -> q [label="λ,S;SA\nλ,A;AaAa\nλ,A;AB\nλ,B;BbBb\nλ,B;BC\nλ,C;CzC\nλ,C;Cz\n"]
+	p -> q [label=<<FONT COLOR="red">λ,λ;S</FONT>>]
+	q -> q [label="λ,S;A\nλ,A;aAa\nλ,A;B\nλ,B;bBb\nλ,B;C\nλ,C;zC\nλ,C;z\n"]
 	q -> q [label="a,a;λ \nb,b;λ \nz,z;λ \n" headport=sw tailport=s]
 	q -> f [label="λ,#;λ"]
 }
